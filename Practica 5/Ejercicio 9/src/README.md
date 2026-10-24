@@ -26,3 +26,14 @@ Borrar las credenciales del código fuente para inyectarlas desde afuera (por ej
 
 **¿Qué limitaciones conserva esta demostración incluso después de tus cambios?**
 Sigue siendo una prueba local básica. No hay una base de datos real guardando esto, y la parte de encriptación fuerte solo la simulé un poco para no tener que meter librerías externas avanzadas a la práctica.
+
+Cierre de la práctica :D
+
+Ejercicio sobre proteger el estado
+Bueno, para este elegí el Ejercicio 1, el de la Cuenta Digital. Y o sea, la decisión de diseño que me ayudó, o sea, lo que de verdad me ayudó a entender todo mejor fue usar el encapsulamiento así estricto. Al poner los atributos en privado y obligar a usar sí o sí los métodos de depositar y retirar, pues el código quedó mucho más limpio. Fue como mucho más fácil entender las reglas del banco ahí adentro de la clase, en vez de tener el main... o sea, en vez de tener el programa principal lleno de validaciones y de "ifs" para evitar que el saldo quedara negativo, ¿verdad? :D
+
+Ejercicio sobre polimorfismo
+Para el otro elegí el Ejercicio 3, el de las tarifas de entrega. Y bueno, la decisión de diseño súper clave aquí fue crear una clase base y dejar que las hijas, o sea, que las subclases sobrescribieran el método de calcular el costo. Esto hizo que... bueno, hizo que el código del ciclo for fuera súper mega fácil de leer. En lugar de tener un montón de condicionales preguntando a cada rato si la entrega era en bici o en auto, o sea, en vez de hacer todo eso, el polimorfismo permitió que cada objeto resolviera su propia fórmula matemática solito jaja :D
+
+Mi pregunta final
+Y bueno, finalmente mi pregunta... o sea, después de hacer el Ejercicio 9 y ver lo súper fácil que es que un atacante saque textos o credenciales directito de un archivo .class usando javap, me quedó esta duda: en una aplicación real, o sea, ya a nivel de una empresa grande, ¿cuál es el estándar actual o la forma definitiva para guardar las credenciales de forma súper segura para que ni siquiera los programadores que entran al servidor puedan verlas? :D
